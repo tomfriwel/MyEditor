@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CustomKeyboardExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>MyEditor.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>CF1EB6EC1DD01E710038BE19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>CFC94F8A1DC74A190016B9E0</key>
 		<dict>
 			<key>primary</key>

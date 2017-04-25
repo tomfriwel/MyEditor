@@ -1,22 +1,362 @@
 <html>
     <head>
+        <meta charset="utf8"/>
+        <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
+        <meta name = "format-detection" content = "telephone=no">
         <style>
+            @charset "utf-8";
+            /* CSS Document */
+            body, a, abbr, acronym, address, applet, b, big, blockquote, body, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, u, ul, var {
+                margin:0;
+                padding:0;
+                border:none;
+                outline:0;
+                vertical-align:baseline;
+            }
             body{
                 width: 100%;
-                height: 100%;
+                overflow:hidden;
+                height:100%;
+	            outline:none;
+                background: red;
             }
 
             #editor{
+                margin: 30px 10px 30px 10px;
+                background-color:#eee;
+                clear:both;
+            }
+            .image{
+                width:100%;
+            }
+            img{
                 width: 100%;
-                height: 100%;
-                background-color:gray;
+                display: table-cell;
+            }
+            p{
+                display: block;
             }
         </style>
     </head>
     <body>
         <div id="editor" contenteditable="true">
+            <ul>
+                <li>123</li>
+                <li>122</li>
+                <li>haha</li>
+                </ul>
+            <p>Hello world!</p>
+            <p>这是一句话。 This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. </p>
+            <p>这是一句中文</p>
+            <div class="image">
+                <img src="./img/unkillable.jpeg">
+            </div>
+            <p>123123</p>
+            <a href="http://www.baidu.com">baidu.baidu.baidu.baidu.<a>
+            <p>这是一句话。 This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. </p>
+            <hr>
+            <table border="1">
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            </table>
+            <p>Hello world!&nbsp;</p><p style="font-size: 14px; line-height: normal; font-family: Menlo; color: rgb(62, 30, 129);"><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures;">Object</span></p><p style="font-size: 14px; line-height: normal; font-family: Menlo;"><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures;">-(</span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures; color: rgb(186, 45, 162);">void</span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures;">)initContext{</span></p><p style="font-size: 14px; line-height: normal; font-family: Menlo; color: rgb(112, 61, 170);"><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures; color: rgb(0, 0, 0);">&nbsp; &nbsp; </span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures;">NSUserDefaults</span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures; color: rgb(0, 0, 0);"> *userDefaults = [</span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures;">NSUserDefaults</span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures; color: rgb(0, 0, 0);"> </span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures; color: rgb(62, 30, 129);">standardUserDefaults</span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures; color: rgb(0, 0, 0);">];</span></p><p style="font-size: 14px; line-height: normal; font-family: Menlo; min-height: 16.3px;"><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures;">&nbsp;&nbsp; &nbsp;</span></p><p style="font-size: 14px; line-height: normal; font-family: Menlo;"><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures;">&nbsp; &nbsp; </span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures; color: rgb(112, 61, 170);">NSString</span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures;"> *htmlString = [userDefaults </span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures; color: rgb(62, 30, 129);">objectForKey</span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures;">:</span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures; color: rgb(209, 47, 27);">@"htmlString"</span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures;">];</span></p><p style="font-size: 14px; line-height: normal; font-family: Menlo;"><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures;">&nbsp; &nbsp; </span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures; color: rgb(186, 45, 162);">if</span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures;"> (htmlString) {</span></p><p style="font-size: 14px; line-height: normal; font-family: Menlo; color: rgb(62, 30, 129);"><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures; color: rgb(0, 0, 0);">&nbsp; &nbsp; &nbsp; &nbsp; [</span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures; color: rgb(186, 45, 162);">self</span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures; color: rgb(0, 0, 0);">.</span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures; color: rgb(79, 129, 135);">webView</span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures; color: rgb(0, 0, 0);"> </span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures;">stringByEvaluatingJavaScriptFromString</span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures; color: rgb(0, 0, 0);">:[</span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures; color: rgb(112, 61, 170);">NSString</span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures; color: rgb(0, 0, 0);"> </span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures;">stringWithFormat</span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures; color: rgb(0, 0, 0);">:</span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures; color: rgb(209, 47, 27);">@"initContext('%@');"</span><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures; color: rgb(0, 0, 0);">, htmlString]];</span></p><p style="font-size: 14px; line-height: normal; font-family: Menlo;"><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures;">&nbsp; &nbsp; }</span></p><p style="font-size: 14px; line-height: normal; font-family: Menlo; min-height: 16.3px;"><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures;">&nbsp;&nbsp; &nbsp;</span></p><p style="font-size: 14px; line-height: normal; font-family: Menlo; color: rgb(62, 30, 129);"><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures;">
+
+
+
+
+
+
+
+</span></p><p style="font-size: 14px; line-height: normal; font-family: Menlo;"><span style="font-family: Menlo-Regular; font-size: 14pt; font-variant-ligatures: no-common-ligatures;">}</span></p><p>啦啦啦！ 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。</p>
+            <p>这是一句话。 This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. </p>
+            <p>Hello world! 啦啦啦！ 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。</p>
+            <p>Hello world! 啦啦啦！ 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。</p>
+            <p>Hello world! 啦啦啦！ 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。</p>
+            <p>Hello world! 啦啦啦！ 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。</p>
+            <p>Hello world! 啦啦啦！ 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。</p>
+            <p>Hello world! 啦啦啦！ 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。</p>
+            <p>这是一句话。 This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. </p>
+            <p>Hello world! 啦啦啦！ 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。</p>
+            <p>这是一句话。 This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. </p>
+            <p>Hello world! 啦啦啦！ 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。</p>
+            <p>这是一句话。 This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. </p>
+            <p>Hello world! 啦啦啦！ 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。</p>
+            <p>这是一句话。 This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. </p>
+            <p>Hello world! 啦啦啦！ 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。</p>
+            <p>这是一句话。 This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. </p>
+            <p>Hello world! 啦啦啦！ 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。 这是一句中文。</p>
         </div>
     </body>
 </html>
+
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/settingFunctions.js"></script>
+<script type="text/javascript" src="./js/jsBridge.js"></script>
+<!--<script type="text/javascript" src="./js/jquery.touchSwipe.js"></script>-->
+
 <script>
+$(document).ready(function(){
+
+    setupWebViewJavascriptBridge(function(bridge) {
+            /* Initialize your app here */
+            bridge.registerHandler('InitData', function(data, responseCallback) {
+                initData(data["content"]);
+                responseCallback('InitData');
+            });
+            bridge.registerHandler('SetSelectionColor', function(data, responseCallback) {
+                document.execCommand('styleWithCSS', false, true);
+                document.execCommand('foreColor', false, data["color"]);
+                responseCallback('SetSelectionColor:'+data["color"]);
+            });
+            bridge.registerHandler('SetFontFamily', function(data, responseCallback) {
+                document.execCommand('styleWithCSS', false, true);
+                document.execCommand('fontName', false, data["fontName"]);
+                responseCallback('SetFontFamily:'+data["fontName"]);
+            });
+    });
+
+
+    var start_cursor = null, end_cursor = null;
+    var start_node = null, end_node = null;
+    var lastMove = null;
+
+    var isSelectingText = false;
+    var start_x=0, start_y=0;
+
+    bindEvent();
+    function bindEvent(){
+        $("#editor").on({
+            "touchstart mousedown":function(e){
+                lastMove = e;
+
+                var clientX = e.clientX ? e.clientX : e.originalEvent.touches[0].clientX;
+                var clientY = e.clientY ? e.clientY : e.originalEvent.touches[0].clientY;
+                console.log("start:"+clientY);
+                start_x = clientX;
+                start_y = clientY;
+
+                var node = e.target.childNodes[0];
+                var clicked_data = findClickedWord(node, clientX, clientY);//["This", 70, ClientRect]
+                if(clicked_data){
+                    start_cursor = clicked_data[1];
+                    end_cursor = clicked_data[1];
+
+                    start_node = node;
+                    end_node = node;
+
+                    console.log(clicked_data);
+                    console.log(node);
+                }
+            },
+            "touchmove mousemove":function(e){
+                lastMove = e;
+
+                var clientX = e.clientX ? e.clientX : e.originalEvent.touches[0].clientX;
+                var clientY = e.clientY ? e.clientY : e.originalEvent.touches[0].clientY;
+                var node = e.target.childNodes[0];
+                console.log("move:"+clientY);
+                console.log("H:"+$(window).height());
+
+                var offset_need = 9;
+                var scrollHeight = document.body.scrollHeight;
+                var scrollTop = document.body.scrollTop;
+                if(clientY > $("body").height()-offset_need){
+                    var offset = clientY - ($("body").height()-offset_need);
+                    var resultTop = $("body").scrollTop()+offset;
+                    resultTop = resultTop > scrollHeight ? scrollHeight : resultTop;
+                    $("body").scrollTop(resultTop);
+                }else if(clientY<offset_need){
+                    var offset = -offset_need;
+                    var resultTop = $("body").scrollTop()+offset;
+                    resultTop = resultTop > scrollHeight ? scrollHeight : resultTop;
+                    $("body").scrollTop(resultTop);
+                }
+                if(!isSelectingText){
+                    if(Math.abs(start_y-clientY)>3){
+                        isSelectingText = false;
+                    }else{
+                        isSelectingText = true;
+                    }
+                }
+                if(isSelectingText){
+                    var ele = document.elementFromPoint(clientX, clientY);
+                    if(ele){
+                        node = ele.firstChild;
+
+                        var clicked_data = findClickedWord(node, clientX, clientY);//["This", 70, ClientRect]
+                        if(clicked_data){
+                            // if(start_cursor < clicked_data[1]){
+                                end_cursor = clicked_data[1];
+                                end_node = node;
+                            // }else{
+                            //     start_cursor = clicked_data[1];
+                            //     start_node = node;
+                            // }
+                            var text = clicked_data[0];
+                            if(start_cursor != null && end_cursor != null && start_node != null && end_node != null){
+                                var range = document.createRange();
+                                // if(start_cursor < end_cursor){
+                                    range.setStart(start_node, start_cursor);
+                                    range.setEnd(end_node, end_cursor+text.length);
+                                // }else{
+                                //     range.setStart(end_node, end_cursor);
+                                //     range.setEnd(start_node, start_cursor+text.length);
+                                // }
+                                var sel = window.getSelection();
+                                sel.removeAllRanges();
+                                sel.addRange(range);
+                            }
+                        }
+                    }
+
+                    return false;
+                }else{
+                    return true;
+                }
+
+                // console.log(clicked_data);
+                // console.log(node);
+                // console.log(ele);
+            },
+            "touchend mouseup":function(e){
+                //console.log(e);
+                if(isSelectingText){
+                    var clientX = e.clientX ? e.clientX : lastMove.originalEvent.touches[0].clientX;
+                    var clientY = e.clientY ? e.clientY : lastMove.originalEvent.touches[0].clientY;
+                    //var clientX = e.originalEvent.changedTouches[0].pageX;
+                    //var clientY = e.originalEvent.changedTouches[0].pageY;
+                    var node = lastMove.target.childNodes[0];
+
+                    var ele = document.elementFromPoint(clientX, clientY);
+                    if(ele){
+                        node = ele.firstChild;
+
+                        var clicked_data = findClickedWord(node, clientX, clientY);//["This", 70, ClientRect]
+
+                        if(clicked_data){
+                            // if(start_cursor < clicked_data[1]){
+                                end_cursor = clicked_data[1];
+                                end_node = node;
+                            // }else{
+                            //     start_cursor = clicked_data[1];
+                            //     start_node = node;
+                            // }
+                            var text = clicked_data[0];
+                            if(start_cursor != null && end_cursor != null && start_node != null && end_node != null){
+                                var range = document.createRange();
+                                // if(start_cursor < end_cursor){
+                                    range.setStart(start_node, start_cursor);
+                                    range.setEnd(end_node, end_cursor+text.length);
+                                // }else{
+                                //     range.setStart(end_node, end_cursor);
+                                //     range.setEnd(start_node, start_cursor+text.length);
+                                // }
+                                var sel = window.getSelection();
+                                sel.removeAllRanges();
+                                sel.addRange(range);
+                            }
+                        }
+                    }
+                }
+
+                // console.log(clicked_data);
+                // console.log(node);
+                // console.log(ele);
+
+                start_cursor = null, end_cursor = null;
+                start_node = null, end_node = null;
+                lastMove = null;
+                isSelectingText = false;
+            }
+        });
+    }
+    /**/
+    function findClickedWord(parentElt, x, y) {
+        if(!parentElt){
+            return null;
+        }
+        if (parentElt.nodeName !== '#text') {
+            console.log('didn\'t click on text node');
+            return null;
+        }
+        var range = document.createRange();
+        var words = parentElt.textContent.split('');
+        var start = 0;
+        var end = 0;
+        for (var i = 0; i < words.length; i++) {
+            var word = words[i];
+            end = start+word.length;
+
+            //console.log("start=" + start + ", end=" + end);
+
+            range.setStart(parentElt, start);
+            range.setEnd(parentElt, end);
+            // not getBoundingClientRect as word could wrap
+            var rects = range.getClientRects();
+
+            //console.log(rects);
+
+            var clickedRect = isClickInRects(rects);
+            if (clickedRect) {
+                //var sel = window.getSelection();
+                //sel.removeAllRanges();
+                //sel.addRange(range);
+                
+                return [word, start, clickedRect];
+            }
+            start = end;
+        }
+        
+        function isClickInRects(rects) {
+            for (var i = 0; i < rects.length; ++i) {
+                var r = rects[i];
+                // console.log("word:"+word);
+                // console.log("x:"+r.left+","+x+","+r.right);
+                // console.log("y:"+r.top+","+y+","+r.bottom);
+                //console.log(r);
+                if (r.left <= x && r.right >= x && r.top <= y && r.bottom >= y) {            
+                    return r;
+                }
+            }
+            return false;
+        }
+        return null;
+    }
+
+    //var signDiv = $("<div>").css({position:"absolute", top:0, left:0, height:20, width:20, backgroundColor:"red"}).appendTo($("#editor"));
+        
+
+    function aRectDiv(rect){
+        signDiv.css({top:rect.top, left:rect.left, height:rect.height, width:rect.width});
+    }
+
+    function onClick(e) {
+        //var elt = document.getElementById('info');
+        var node = e.target.childNodes[0];
+        console.log(node);
+        console.log("len=" + node.length);
+
+        var clicked = findClickedWord(node, e.clientX, e.clientY);
+        //elt.innerHTML = 'Nothing Clicked';
+        if (clicked) {
+            var word = clicked[0];
+            var start = clicked[1];
+            var r = clicked[2];
+            //elt.innerHTML = 'Clicked: ('+r.top+','+r.left+') word:'+word+' at offset '+start; 
+        }
+    }
+
+    function initData(content){
+        $("#editor").html(content);
+        bindEvent();
+    }
+
+    //document.addEventListener('click', onClick);
+});
 </script>

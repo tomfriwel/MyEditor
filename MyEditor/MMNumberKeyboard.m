@@ -18,6 +18,7 @@ typedef NS_ENUM(NSUInteger, MMNumberKeyboardButton) {
     MMNumberKeyboardButtonNone = NSNotFound,
 };
 
+
 @interface MMNumberKeyboard () <UIInputViewAudioFeedback>
 
 @property (strong, nonatomic) NSDictionary *buttonDictionary;
@@ -28,6 +29,8 @@ typedef NS_ENUM(NSUInteger, MMNumberKeyboardButton) {
 
 @end
 
+
+//
 @interface _MMNumberKeyboardButton : UIButton
 
 + (_MMNumberKeyboardButton *)keyboardButtonWithStyle:(MMNumberKeyboardButtonStyle)style;
@@ -156,7 +159,6 @@ static const CGFloat MMNumberKeyboardPadSpacing = 8.0f;
         [button setExclusiveTouch:YES];
         [button addTarget:self action:@selector(_buttonInput:) forControlEvents:UIControlEventTouchUpInside];
         [button addTarget:self action:@selector(_buttonPlayClick:) forControlEvents:UIControlEventTouchDown];
-        
         [self addSubview:button];
     }
     
@@ -176,6 +178,12 @@ static const CGFloat MMNumberKeyboardPadSpacing = 8.0f;
     
     // Add default return key style.
     [self setReturnKeyButtonStyle:MMNumberKeyboardButtonStyleDone];
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 20, 100, 100)];
+    imageView.layer.cornerRadius = 5;
+    imageView.clipsToBounds = YES;
+    imageView.image = [UIImage imageNamed:@"test"];
+    [self addSubview:imageView];
     
     // Size to fit.
     [self sizeToFit];
@@ -562,7 +570,7 @@ NS_INLINE CGRect MMButtonRectMake(CGRect rect, CGRect contentRect, UIUserInterfa
                 NSUInteger separatorsToInsert = delta;
                 while (separatorsToInsert--) {
                     UIView *separator = [[UIView alloc] initWithFrame:CGRectZero];
-                    separator.backgroundColor = [UIColor colorWithWhite:0.0f alpha:0.1f];
+                    separator.backgroundColor = [UIColor redColor];//[UIColor colorWithWhite:0.0f alpha:0.1f];
                     
                     [self addSubview:separator];
                     [separatorViews addObject:separator];
@@ -646,6 +654,8 @@ NS_INLINE CGRect MMButtonRectMake(CGRect rect, CGRect contentRect, UIUserInterfa
 
 @end
 
+
+//
 @interface _MMNumberKeyboardButton ()
 
 @property (strong, nonatomic) NSTimer *continuousPressTimer;
@@ -660,6 +670,14 @@ NS_INLINE CGRect MMButtonRectMake(CGRect rect, CGRect contentRect, UIUserInterfa
 @end
 
 @implementation _MMNumberKeyboardButton
+
+//-(UIColor *)fillColor{
+//    return [UIColor grayColor];
+//}
+//
+//-(UIColor *)highlightedFillColor{
+//    return [UIColor redColor];
+//}
 
 + (_MMNumberKeyboardButton *)keyboardButtonWithStyle:(MMNumberKeyboardButtonStyle)style
 {
@@ -736,6 +754,8 @@ NS_INLINE CGRect MMButtonRectMake(CGRect rect, CGRect contentRect, UIUserInterfa
         buttonLayer.shadowOpacity = 1.0f;
         buttonLayer.shadowRadius = 0.0f;
     }
+    
+    self.layer.cornerRadius = 19;
 
     [self _updateButtonAppearance];
 }

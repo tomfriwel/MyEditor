@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B496D878B64D5CCBB7195EB /* libPods-MyEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F85BCA233410A877D03A92FB /* libPods-MyEditor.a */; };
+		CF18FAAE1E56A62700225125 /* TestParagraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF18FAAD1E56A62700225125 /* TestParagraphViewController.m */; };
+		CF1EB6F11DD01E710038BE19 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1EB6F01DD01E710038BE19 /* KeyboardViewController.m */; };
+		CF1EB6F51DD01E710038BE19 /* CustomKeyboardExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CF1EB6ED1DD01E710038BE19 /* CustomKeyboardExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CF617DA91DD1680D006F843C /* MMNumberKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = CF617DA81DD1680D006F843C /* MMNumberKeyboard.m */; };
+		CF617DB91DD19DC4006F843C /* MyWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF617DB81DD19DC4006F843C /* MyWebView.m */; };
+		CF617DCC1DD1BAE9006F843C /* JSTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF617DCB1DD1BAE9006F843C /* JSTextView.m */; };
+		CF617DCF1DD1BB4D006F843C /* JSInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF617DCE1DD1BB4D006F843C /* JSInputView.m */; };
+		CF617DD21DD1BCA7006F843C /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF617DD11DD1BCA7006F843C /* DemoViewController.m */; };
+		CF617DD41DD1C483006F843C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF617DD31DD1C483006F843C /* AssetsLibrary.framework */; };
+		CF617DFF1DD1F1BA006F843C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF617DFE1DD1F1BA006F843C /* CoreGraphics.framework */; };
+		CF617E011DD1F5C2006F843C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF617E001DD1F5C2006F843C /* CoreText.framework */; };
+		CFC1E2271DD07616000CFDFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC94F9A1DC74A190016B9E0 /* Assets.xcassets */; };
 		CFC94F901DC74A190016B9E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC94F8F1DC74A190016B9E0 /* main.m */; };
 		CFC94F931DC74A190016B9E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC94F921DC74A190016B9E0 /* AppDelegate.m */; };
 		CFC94F961DC74A190016B9E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC94F951DC74A190016B9E0 /* ViewController.m */; };
@@ -15,9 +28,17 @@
 		CFC94F9E1DC74A190016B9E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC94F9C1DC74A190016B9E0 /* LaunchScreen.storyboard */; };
 		CFC94FA91DC74A190016B9E0 /* MyEditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC94FA81DC74A190016B9E0 /* MyEditorTests.m */; };
 		CFC94FB41DC74A190016B9E0 /* MyEditorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC94FB31DC74A190016B9E0 /* MyEditorUITests.m */; };
+		CFC94FC21DC74B7E0016B9E0 /* editor in Resources */ = {isa = PBXBuildFile; fileRef = CFC94FC11DC74B7E0016B9E0 /* editor */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CF1EB6F31DD01E710038BE19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFC94F831DC74A190016B9E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF1EB6EC1DD01E710038BE19;
+			remoteInfo = CustomKeyboardExtension;
+		};
 		CFC94FA51DC74A190016B9E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CFC94F831DC74A190016B9E0 /* Project object */;
@@ -34,7 +55,42 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CF1EB6F91DD01E710038BE19 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CF1EB6F51DD01E710038BE19 /* CustomKeyboardExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		28BBA2FF08C6254E72E63702 /* Pods-MyEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyEditor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyEditor/Pods-MyEditor.debug.xcconfig"; sourceTree = "<group>"; };
+		733882B945FF2D06D8C00C4B /* Pods-MyEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyEditor.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyEditor/Pods-MyEditor.release.xcconfig"; sourceTree = "<group>"; };
+		CF18FAAC1E56A62700225125 /* TestParagraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestParagraphViewController.h; sourceTree = "<group>"; };
+		CF18FAAD1E56A62700225125 /* TestParagraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestParagraphViewController.m; sourceTree = "<group>"; };
+		CF1EB6ED1DD01E710038BE19 /* CustomKeyboardExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CustomKeyboardExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF1EB6EF1DD01E710038BE19 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		CF1EB6F01DD01E710038BE19 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		CF1EB6F21DD01E710038BE19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF617DA71DD1680D006F843C /* MMNumberKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNumberKeyboard.h; sourceTree = "<group>"; };
+		CF617DA81DD1680D006F843C /* MMNumberKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNumberKeyboard.m; sourceTree = "<group>"; };
+		CF617DB71DD19DC4006F843C /* MyWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWebView.h; sourceTree = "<group>"; };
+		CF617DB81DD19DC4006F843C /* MyWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWebView.m; sourceTree = "<group>"; };
+		CF617DCA1DD1BAE9006F843C /* JSTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTextView.h; sourceTree = "<group>"; };
+		CF617DCB1DD1BAE9006F843C /* JSTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTextView.m; sourceTree = "<group>"; };
+		CF617DCD1DD1BB4D006F843C /* JSInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSInputView.h; sourceTree = "<group>"; };
+		CF617DCE1DD1BB4D006F843C /* JSInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSInputView.m; sourceTree = "<group>"; };
+		CF617DD01DD1BCA7006F843C /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		CF617DD11DD1BCA7006F843C /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		CF617DD31DD1C483006F843C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		CF617DFE1DD1F1BA006F843C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CF617E001DD1F5C2006F843C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		CFC94F8B1DC74A190016B9E0 /* MyEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC94F8F1DC74A190016B9E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CFC94F911DC74A190016B9E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,13 +107,26 @@
 		CFC94FAF1DC74A190016B9E0 /* MyEditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyEditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC94FB31DC74A190016B9E0 /* MyEditorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyEditorUITests.m; sourceTree = "<group>"; };
 		CFC94FB51DC74A190016B9E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFC94FC11DC74B7E0016B9E0 /* editor */ = {isa = PBXFileReference; lastKnownFileType = folder; path = editor; sourceTree = "<group>"; };
+		F85BCA233410A877D03A92FB /* libPods-MyEditor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyEditor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CF1EB6EA1DD01E710038BE19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CFC94F881DC74A190016B9E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF617E011DD1F5C2006F843C /* CoreText.framework in Frameworks */,
+				CF617DFF1DD1F1BA006F843C /* CoreGraphics.framework in Frameworks */,
+				CF617DD41DD1C483006F843C /* AssetsLibrary.framework in Frameworks */,
+				9B496D878B64D5CCBB7195EB /* libPods-MyEditor.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +147,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D6F2DFBA8AD1C07B1EC79A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF617E001DD1F5C2006F843C /* CoreText.framework */,
+				CF617DFE1DD1F1BA006F843C /* CoreGraphics.framework */,
+				CF617DD31DD1C483006F843C /* AssetsLibrary.framework */,
+				F85BCA233410A877D03A92FB /* libPods-MyEditor.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4092CDABFB15CE3620C21842 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28BBA2FF08C6254E72E63702 /* Pods-MyEditor.debug.xcconfig */,
+				733882B945FF2D06D8C00C4B /* Pods-MyEditor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF18FAAB1E56A60E00225125 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF18FAAC1E56A62700225125 /* TestParagraphViewController.h */,
+				CF18FAAD1E56A62700225125 /* TestParagraphViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CF1EB6EE1DD01E710038BE19 /* CustomKeyboardExtension */ = {
+			isa = PBXGroup;
+			children = (
+				CF1EB6EF1DD01E710038BE19 /* KeyboardViewController.h */,
+				CF1EB6F01DD01E710038BE19 /* KeyboardViewController.m */,
+				CF1EB6F21DD01E710038BE19 /* Info.plist */,
+			);
+			path = CustomKeyboardExtension;
+			sourceTree = "<group>";
+		};
+		CF617DC91DD1BAB4006F843C /* customEditor */ = {
+			isa = PBXGroup;
+			children = (
+				CF617DCA1DD1BAE9006F843C /* JSTextView.h */,
+				CF617DCB1DD1BAE9006F843C /* JSTextView.m */,
+				CF617DCD1DD1BB4D006F843C /* JSInputView.h */,
+				CF617DCE1DD1BB4D006F843C /* JSInputView.m */,
+			);
+			name = customEditor;
+			sourceTree = "<group>";
+		};
 		CFC94F821DC74A190016B9E0 = {
 			isa = PBXGroup;
 			children = (
+				CF1EB6EE1DD01E710038BE19 /* CustomKeyboardExtension */,
 				CFC94F8D1DC74A190016B9E0 /* MyEditor */,
 				CFC94FA71DC74A190016B9E0 /* MyEditorTests */,
 				CFC94FB21DC74A190016B9E0 /* MyEditorUITests */,
 				CFC94F8C1DC74A190016B9E0 /* Products */,
+				4092CDABFB15CE3620C21842 /* Pods */,
+				1D6F2DFBA8AD1C07B1EC79A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +216,7 @@
 				CFC94F8B1DC74A190016B9E0 /* MyEditor.app */,
 				CFC94FA41DC74A190016B9E0 /* MyEditorTests.xctest */,
 				CFC94FAF1DC74A190016B9E0 /* MyEditorUITests.xctest */,
+				CF1EB6ED1DD01E710038BE19 /* CustomKeyboardExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,15 +224,24 @@
 		CFC94F8D1DC74A190016B9E0 /* MyEditor */ = {
 			isa = PBXGroup;
 			children = (
+				CF18FAAB1E56A60E00225125 /* Controllers */,
+				CF617DC91DD1BAB4006F843C /* customEditor */,
+				CF617DA71DD1680D006F843C /* MMNumberKeyboard.h */,
+				CF617DA81DD1680D006F843C /* MMNumberKeyboard.m */,
+				CFC94FC11DC74B7E0016B9E0 /* editor */,
 				CFC94F911DC74A190016B9E0 /* AppDelegate.h */,
 				CFC94F921DC74A190016B9E0 /* AppDelegate.m */,
 				CFC94F941DC74A190016B9E0 /* ViewController.h */,
 				CFC94F951DC74A190016B9E0 /* ViewController.m */,
+				CF617DD01DD1BCA7006F843C /* DemoViewController.h */,
+				CF617DD11DD1BCA7006F843C /* DemoViewController.m */,
 				CFC94F971DC74A190016B9E0 /* Main.storyboard */,
 				CFC94F9A1DC74A190016B9E0 /* Assets.xcassets */,
 				CFC94F9C1DC74A190016B9E0 /* LaunchScreen.storyboard */,
 				CFC94F9F1DC74A190016B9E0 /* Info.plist */,
 				CFC94F8E1DC74A190016B9E0 /* Supporting Files */,
+				CF617DB71DD19DC4006F843C /* MyWebView.h */,
+				CF617DB81DD19DC4006F843C /* MyWebView.m */,
 			);
 			path = MyEditor;
 			sourceTree = "<group>";
@@ -143,17 +275,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CFC94F8A1DC74A190016B9E0 /* MyEditor */ = {
+		CF1EB6EC1DD01E710038BE19 /* CustomKeyboardExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CFC94FB81DC74A190016B9E0 /* Build configuration list for PBXNativeTarget "MyEditor" */;
+			buildConfigurationList = CF1EB6F81DD01E710038BE19 /* Build configuration list for PBXNativeTarget "CustomKeyboardExtension" */;
 			buildPhases = (
-				CFC94F871DC74A190016B9E0 /* Sources */,
-				CFC94F881DC74A190016B9E0 /* Frameworks */,
-				CFC94F891DC74A190016B9E0 /* Resources */,
+				CF1EB6E91DD01E710038BE19 /* Sources */,
+				CF1EB6EA1DD01E710038BE19 /* Frameworks */,
+				CF1EB6EB1DD01E710038BE19 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = CustomKeyboardExtension;
+			productName = CustomKeyboardExtension;
+			productReference = CF1EB6ED1DD01E710038BE19 /* CustomKeyboardExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CFC94F8A1DC74A190016B9E0 /* MyEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFC94FB81DC74A190016B9E0 /* Build configuration list for PBXNativeTarget "MyEditor" */;
+			buildPhases = (
+				8BFC0B7C98FF63D88224CFF1 /* [CP] Check Pods Manifest.lock */,
+				CFC94F871DC74A190016B9E0 /* Sources */,
+				CFC94F881DC74A190016B9E0 /* Frameworks */,
+				CFC94F891DC74A190016B9E0 /* Resources */,
+				821AAC07DA9F25E3EB8E2B71 /* [CP] Embed Pods Frameworks */,
+				7BAB889689546BCA29C58819 /* [CP] Copy Pods Resources */,
+				CF1EB6F91DD01E710038BE19 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF1EB6F41DD01E710038BE19 /* PBXTargetDependency */,
 			);
 			name = MyEditor;
 			productName = MyEditor;
@@ -205,9 +359,14 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = tom;
 				TargetAttributes = {
+					CF1EB6EC1DD01E710038BE19 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 8SJXRJ78CW;
+						ProvisioningStyle = Automatic;
+					};
 					CFC94F8A1DC74A190016B9E0 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = T5EW9858SB;
+						DevelopmentTeam = 8SJXRJ78CW;
 						ProvisioningStyle = Automatic;
 					};
 					CFC94FA31DC74A190016B9E0 = {
@@ -240,16 +399,26 @@
 				CFC94F8A1DC74A190016B9E0 /* MyEditor */,
 				CFC94FA31DC74A190016B9E0 /* MyEditorTests */,
 				CFC94FAE1DC74A190016B9E0 /* MyEditorUITests */,
+				CF1EB6EC1DD01E710038BE19 /* CustomKeyboardExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CF1EB6EB1DD01E710038BE19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC1E2271DD07616000CFDFC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CFC94F891DC74A190016B9E0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CFC94F9E1DC74A190016B9E0 /* LaunchScreen.storyboard in Resources */,
+				CFC94FC21DC74B7E0016B9E0 /* editor in Resources */,
 				CFC94F9B1DC74A190016B9E0 /* Assets.xcassets in Resources */,
 				CFC94F991DC74A190016B9E0 /* Main.storyboard in Resources */,
 			);
@@ -271,14 +440,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7BAB889689546BCA29C58819 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyEditor/Pods-MyEditor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		821AAC07DA9F25E3EB8E2B71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyEditor/Pods-MyEditor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BFC0B7C98FF63D88224CFF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		CF1EB6E91DD01E710038BE19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF1EB6F11DD01E710038BE19 /* KeyboardViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CFC94F871DC74A190016B9E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CFC94F961DC74A190016B9E0 /* ViewController.m in Sources */,
+				CF617DCF1DD1BB4D006F843C /* JSInputView.m in Sources */,
+				CF617DA91DD1680D006F843C /* MMNumberKeyboard.m in Sources */,
+				CF18FAAE1E56A62700225125 /* TestParagraphViewController.m in Sources */,
+				CF617DD21DD1BCA7006F843C /* DemoViewController.m in Sources */,
 				CFC94F931DC74A190016B9E0 /* AppDelegate.m in Sources */,
 				CFC94F901DC74A190016B9E0 /* main.m in Sources */,
+				CF617DCC1DD1BAE9006F843C /* JSTextView.m in Sources */,
+				CF617DB91DD19DC4006F843C /* MyWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +532,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CF1EB6F41DD01E710038BE19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF1EB6EC1DD01E710038BE19 /* CustomKeyboardExtension */;
+			targetProxy = CF1EB6F31DD01E710038BE19 /* PBXContainerItemProxy */;
+		};
 		CFC94FA61DC74A190016B9E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CFC94F8A1DC74A190016B9E0 /* MyEditor */;
@@ -333,6 +569,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CF1EB6F61DD01E710038BE19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8SJXRJ78CW;
+				INFOPLIST_FILE = CustomKeyboardExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tomfriwel.MyEditor.CustomKeyboardExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CF1EB6F71DD01E710038BE19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8SJXRJ78CW;
+				INFOPLIST_FILE = CustomKeyboardExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tomfriwel.MyEditor.CustomKeyboardExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		CFC94FB61DC74A190016B9E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -423,10 +683,12 @@
 		};
 		CFC94FB91DC74A190016B9E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28BBA2FF08C6254E72E63702 /* Pods-MyEditor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T5EW9858SB;
+				DEVELOPMENT_TEAM = 8SJXRJ78CW;
 				INFOPLIST_FILE = MyEditor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tomfriwel.MyEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,10 +697,12 @@
 		};
 		CFC94FBA1DC74A190016B9E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 733882B945FF2D06D8C00C4B /* Pods-MyEditor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T5EW9858SB;
+				DEVELOPMENT_TEAM = 8SJXRJ78CW;
 				INFOPLIST_FILE = MyEditor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tomfriwel.MyEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +762,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CF1EB6F81DD01E710038BE19 /* Build configuration list for PBXNativeTarget "CustomKeyboardExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF1EB6F61DD01E710038BE19 /* Debug */,
+				CF1EB6F71DD01E710038BE19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CFC94F861DC74A190016B9E0 /* Build configuration list for PBXProject "MyEditor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -514,6 +787,7 @@
 				CFC94FBA1DC74A190016B9E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFC94FBB1DC74A190016B9E0 /* Build configuration list for PBXNativeTarget "MyEditorTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +796,7 @@
 				CFC94FBD1DC74A190016B9E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFC94FBE1DC74A190016B9E0 /* Build configuration list for PBXNativeTarget "MyEditorUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +805,7 @@
 				CFC94FC01DC74A190016B9E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
