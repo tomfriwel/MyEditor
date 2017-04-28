@@ -1,0 +1,25 @@
+<html>
+<head>
+    <style>
+        #btn {
+            width:50px;
+            height:150px;
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">text text text</div>
+    <div id="btn" onclick="selectMain()"></div>
+</body>
+</html>
+<script type="text/javascript">
+function selectMain() {
+    var range = document.createRange();
+    range.selectNode(document.getElementById("main"));
+    var sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+    console.log(range);
+}
+</script>

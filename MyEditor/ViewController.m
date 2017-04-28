@@ -138,7 +138,7 @@ static Class hackishFixClass = Nil;
 }
 
 -(void)loadWeb{
-    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"editor" ofType:@"html" inDirectory:@"editor"]];
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"html" inDirectory:@"editor"]];
     [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
 //    [self initContext];
 }
